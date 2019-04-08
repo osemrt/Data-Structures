@@ -1,0 +1,5 @@
+# Insertion Sort
+
+An insertion sorting algorithm maintains a sub-list that is always sorted, while the other portion of the list remains unsorted. We take elements from the unsorted sub-list and insert them in the correct position in the sorted sub-list, in such a way that this sub-list remains sorted.
+
+In insertion sorting, we start with one element, assuming it to be sorted, and then take another element from the unsorted sub-list and place it at the correct position (in relation to the first element) in the sorted sub-list. This means that our sorted sub-list now has two elements. Then, we again take another element from the unsorted sub-list, and place it in the correct position (in relation to the two already sorted elements) in the sorted sub-list. We repeatedly follow this process to insert all the elements one by one from the unsorted sub-list into the sorted sub-list. The shaded elements denote the ordered sub-lists, and in each iteration, an element from the unordered sub-list is inserted at the correct position in the sorted sub-list.

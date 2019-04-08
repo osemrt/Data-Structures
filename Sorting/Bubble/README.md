@@ -1,0 +1,3 @@
+# Bubble Sort
+
+The idea behind the bubble sort algorithm is very simple. Given an unordered list, we compare adjacent elements in the list, and after each comparison, place them in the right order of magnitude. This works by swapping adjacent items if they are not in the correct order. The process is repeated  n-1  times for a list of  n  items. In each such iteration, the largest element is arranged in the end. For example, in the first iteration, the largest element would be placed in the last position of the list, and again, the same process will be followed for the remaining n-1  items. In the second iteration, the second largest element will be placed at the second-to-last position in the list, and the process will then be repeated until the list is sorted.
