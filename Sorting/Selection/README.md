@@ -1,0 +1,3 @@
+# Selection Sort
+
+The selection sorting algorithm begins by finding the smallest element in the list, and interchanges it with the data stored at the first position in the list. Thus, it makes the sub-list sorted up to the first element. Next, the second smallest element, which is the smallest element in the remaining list, is identified and interchanged with the second position in the list. This makes the initial two elements sorted. The process is repeated, and the smallest element remaining in the list should be swapped with the element in the third index on the list. This means that the first three elements are now sorted. This process is repeated for (n-1) times to sort n items.
