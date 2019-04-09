@@ -6,7 +6,7 @@
 *	@return the address of the created array or NULL when the creating fails
 */
 
-char* createArray(int size) {
+int* createArray(int size) {
 	int* arr = (int*)malloc(sizeof(int) * size);
 	return arr;
 }

@@ -8,7 +8,7 @@
 */
 
 
-char* fillArray(int* arr, int size) {
+int* fillArray(int* arr, int size) {
 	int i;
 	if (arr != NULL) {
 		for (i = 0; i < size; i++) {
