@@ -27,7 +27,7 @@ NODE* insert(NODE* root, int data) {
 
 
 /**
-
+// by returning nothing
 void insert(NODE** pointerToRoot, int data) {
 	NODE* root = *pointerToRoot;
 
