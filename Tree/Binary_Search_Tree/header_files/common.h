@@ -6,10 +6,10 @@
 #define TRUE 1
 #define FALSE 0
 
-typedef struct {
+typedef struct NODE {
 
 	int data;
-	NODE* left;
-	NODE* right;
+	struct NODE* left;
+	struct NODE* right;
 
 }NODE;
