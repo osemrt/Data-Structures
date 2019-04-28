@@ -4,12 +4,13 @@ int main() {
 
 	srand(time(NULL));
 	int size = rand() % MAX_SIZE;
+	size = 10;
 	int* arr = createArray(size);
 	fillArray(arr, size);
 	printArray(arr, size);
 
-	
-
+	mergeSort(arr, 0, size - 1);
+	printArray(arr, size);
 
 	return 0;
 }
