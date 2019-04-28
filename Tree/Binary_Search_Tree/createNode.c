@@ -6,7 +6,7 @@
 *	@return the address of the created node or NULL as an error indicator
 */
 
-NODE* cerateNode(int data) {
+NODE* createNode(int data) {
 
 	NODE* node = (NODE*)malloc(sizeof(NODE));
 	if (node != NULL) {
@@ -18,5 +18,4 @@ NODE* cerateNode(int data) {
 	else {
 		return NULL;
 	}
-
 }
