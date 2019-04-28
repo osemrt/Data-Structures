@@ -32,7 +32,7 @@ void insert(NODE** pointerToRoot, int data) {
 	NODE* root = *pointerToRoot;
 
 	if (root == NULL) {
-		root = getNewNode(data);
+		root = createNode(data);
 	}
 	else if (data >= root->data) {
 		insert(&(root->right), data);
