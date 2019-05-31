@@ -19,3 +19,10 @@ int getFront(Queue* queue, int* x);
 int isEmpty(Queue* queue);
 int isFull(Queue* queue);
 int printQueue(Queue* queue);
+
+//Other functions
+int** createMatrix(int numOfRow, int numOfColumn);
+int* createFlagArray(int size, int flag);
+int depthFirstSearch(int** graph, int numOfVertices, int startVertex, int* visited);
+//int depthFirstSearch(int** graph, int numOfVertices, int startVertex);
+int breadthFirstSearch(int** graph, int numOfVertices, int startVertex);
