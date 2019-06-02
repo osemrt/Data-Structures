@@ -39,7 +39,7 @@ Entry* ht_search(HashTable* hashTable, int key) {
 		i++;
 	}
 
-	if (hashTable->arr[(hashIndex + i) % hashTable->size].hashNode->key == key) {
+	if (hashTable->arr[(hashIndex + i) % hashTable->size].status != DELETED && hashTable->arr[(hashIndex + i) % hashTable->size].hashNode->key == key) {
 		return &hashTable->arr[(hashIndex + i) % hashTable->size];
 	}
 

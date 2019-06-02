@@ -35,11 +35,11 @@ Entry* ht_search(HashTable* hashTable, int key) {
 	int hashIndex = hash(key, hashTable->size);
 
 	int i = 0;
-	while (hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].status != EMPTY && hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].hashNode->key != key) {
+	while (hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].status != EMPTY  && hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].hashNode->key != key) {
 		i++;
 	}
 
-	if (hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].hashNode->key == key) {
+	if (hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].status != DELETED && hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size].hashNode->key == key) {
 		return &hashTable->arr[(hashIndex + i * second_hash(key)) % hashTable->size];
 	}
 
